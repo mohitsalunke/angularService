@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script>            
+            var employee ={
+                id:1,
+                name:"pankaj",
+                gender:"male",
+                city:"delhi",
+                salary:34000,
+                show:function(){
+                    document.write("<table border=1 >");
+                    document.write("<tr>");
+                    document.write("<th>Employee Id</th>");
+                    document.write("<td>"+this.id+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Employee Name</th>");
+                    document.write("<td>"+this.name+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Gender</th>");
+                    document.write("<td>"+this.gender+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>City</th>");
+                    document.write("<td>"+this.city+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Salary</th>");
+                    document.write("<td>"+this.salary+"</td>");
+                    document.write("</tr>");
+                    document.write("</table>");
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("<h2>Java Script Objects : Type 2</h2><hr />");
+            employee.show();
+        </script>
+    </body>
+</html>

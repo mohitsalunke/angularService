@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+          //  function add(n1,n2)
+           // {
+               // var result=n1+n2;
+               // alert("Function calling addition is "+ result)
+                //return result;
+
+
+           // }
+            // function add(a=12,b=13)
+            // {
+            //     var result=a+b;
+            //     alert("Function calling addition is "+ result)
+            // }
+           
+           // var a1=prompt("Enter first num ",5);
+            //var a2=prompt("Enter second num ",5);
+            //var s=add(parseInt(a1),parseInt(a2));
+            
+
+            
+
+            //alert("Function calling addition is "+ s)
+            
+            function fn(a1,a2,...args)
+            {
+                console.log(a1);
+                console.log(a2);
+                console.log(args);
+                var s;
+                for(i=0;i<args;i++)
+                {
+                   s=a1+a2+i;
+                   
+                }
+                console.log("Addition "+s);
+               
+            }
+
+            fn(1,2,3,4,5,6);
+
+        </script>
+    </head>
+    <body>
+        //<button onclick="add(20,25)">add</button>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script>
+            function calculate(ch)
+            { 
+            var i=document.getElementById("t1").value;
+            var j=document.getElementById("t2").value;
+           // var res=parseInt(i)+parseInt(j);
+            var ch=prompt("enter choice");
+            switch(ch)
+            {case 'Add' : var res=parseInt(i)+parseInt(j);
+                          document.getElementById("res").innerHTML="<h1> Addition "+res+"</h1>";
+                          break;
+              case 'Sub' : var res1=parseInt(i)-parseInt(j);
+                           document.getElementById("res").innerHTML="<h1> Substraction "+res1+"</h1>" ;
+                           break;
+              case 'Mul' : var res2=parseInt(i)*parseInt(j);
+                           document.getElementById("res").innerHTML="<h1> Multiplication "+res2+"</h1>"  ;
+                           break;
+              case 'div' : var res3=parseInt(i)%parseInt(j);
+                           document.getElementById("res").innerHTML="<h1> Division "+res3+"</h1>";
+                           break;         
+         }
+            
+
+            //document.write("<h1> Addition "+res+"</h1>");
+            //document.getElementById("res").innerHTML="<h1> Addition "+res+"</h1>"
+        }
+           
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1" placeholder="
+        Enter first number"/></br>
+        <input type="text" id="t2" placeholder="
+        Enter second number"/></br>
+        <button onclick="calculate('Add')">Add</button></br>
+        <button onclick="calculate('Sub')">Sub</button></br>
+        <button onclick="calculate('Mul')">Mul</button></br>
+        <button onclick="calculate('div')">Div</button></br>
+        <p id ="res"></p>
+    </body>
+</html>

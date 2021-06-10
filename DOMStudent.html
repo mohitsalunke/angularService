@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <script>
+            function showData()
+            {
+                var rn=document.getElementById("t1").value;
+               var name=document.getElementById("t2").value;
+                var Eng=document.getElementById("t3").value;
+                var Math=document.getElementById("t4").value;
+                var Hindi=document.getElementById("t5").value;
+                var Sci=document.getElementById("t6").value;
+
+                var total=parseInt(Eng)+parseInt(Math)+parseInt(Hindi)+parseInt(Sci);
+                var percentage=(total/400)*100;
+                
+
+                    document.write("<table border=1>");
+                    
+                    document.write("<tr>" );
+                    document.write("<th>Student Name</th>" );
+                    document.write("<td>"+name+"</td>") ;
+                    document.write("</tr>" );
+                   
+                    document.write("<tr>");
+                    document.write("<th>English</th>");
+                    document.write("<td>"+Eng+"</td>");
+                    document.write("</tr>") ;
+                   
+                    document.write("<tr>" );
+                    document.write("<th>Maths</th>" );
+                    document.write("<td>"+Math+"</td>" );
+                    document.write("</tr>");
+                   
+                    document.write("<tr>" );
+                    document.write("<th>Hindi</th>" );
+                    document.write("<td>"+Hindi+"</td>" );
+                    document.write("</tr>" );
+                   
+                    document.write("<tr>" );
+                    document.write("<th>Science</th>" );
+                    document.write("<td>"+Sci+"</td>" );
+                    document.write("</tr>" );
+                    //documnet.write("</br>" );
+                    document.write("<tr>" );
+                    document.write("<th>Total</th>" );
+                    document.write("<td>"+total+"</td>" );
+                    document.write("</tr>" );
+
+                    document.write("<tr>" );
+                    document.write("<th>Percentage</th>" );
+                    document.write("<td>"+percentage+"</td>" );
+                    document.write("</tr>" );
+                    document.write("</table>");
+
+
+                // //document.getElementById("res").innerHTML="<h1> Total "+total+"</h1>";
+                //  document.getElementById("res").innerHTML="<table border=1>";
+                // document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>Roll No</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+rn+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>Student Name</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+name+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>English</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+Eng+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>Maths</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+Math+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>Hindi</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+Hindi+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>Science</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+Sci+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="<tr>" ;
+                //     document.getElementById("res").innerHTML="<th>Total Marks</th>" ;
+                //     document.getElementById("res").innerHTML="<td>"+total+"</td>" ;
+                //     document.getElementById("res").innerHTML="</tr>" ;
+
+                //     document.getElementById("res").innerHTML="</table>";
+
+
+
+
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1" placeholder="Enter RollNo"/></br>
+        <input type="text" id="t2" placeholder="Enter Name"/></br>
+        <input type="text" id="t3" placeholder="Enter Eng Marks"/></br>
+        <input type="text" id="t4" placeholder="Enter Maths Marks"/></br>
+        <input type="text" id="t5" placeholder="Enter Hindi Marks"/></br>
+        <input type="text" id="t6" placeholder="Enter Science Marks"/></br>
+        <button onclick="showData()">Show</button>
+        
+    </body>
+</html>

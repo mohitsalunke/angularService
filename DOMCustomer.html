@@ -1,0 +1,73 @@
+<html>
+    <head>
+           
+    </head>
+    <body>
+        <input type="text" id="t1" placeholder="Enter Id"/></br>
+        <input type="text" id="t2" placeholder="Enter Customer Name"/></br>
+        <input type="text" id="t3" placeholder="Enter Mobile num"/></br>
+        <input type="text" id="t4" placeholder="Enter Item"/></br>
+        <input type="text" id="t5" placeholder="Enter Quantity"/></br>
+        <input type="text" id="t6" placeholder="Enter Amount"/></br>
+        
+        <button onclick="AddCustomer()">Add</button>
+
+        <table border="1" id="show">
+            <thead>
+                <tr>
+                    <th>Customer Id</th>
+                    <th>Customer Name</th>
+                    <th>Customer M.no</th>
+                    <th>Item Name</th>
+                    <th>Item Quantity</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+
+        </table>
+
+        <script>
+            var list1=[];
+            var list2=[];
+            var list3=[];
+            var list4=[];
+            var list5=[];
+            var list6=[];
+
+            var n=1;
+            var x=0;
+
+            function AddCustomer()
+            {
+                var AddRowFirst=document.getElementById('show').value;
+                var NewRow=AddRowFirst.insertRow(n);
+                list1[x]=document.getElementById("t1").value;
+                list2[x]=document.getElementById("t2").value;
+                list3[x]=document.getElementById("t3").value;
+                list4[x]=document.getElementById("t4").value;
+                list5[x]=document.getElementById("t5").value;
+                list6[x]=document.getElementById("t6").value;
+
+                var cel1=NewRow.insertCell(0);
+                var cel2=NewRow.insertCell(1);
+                var cel3=NewRow.insertCell(2);
+                var cel4=NewRow.insertCell(3);
+                var cel5=NewRow.insertCell(4);
+                var cel6=NewRow.insertCell(5);
+
+                cel1.innerHTML =list1[x];
+                cel2.innerHTML =list2[x];
+                cel3.innerHTML =list3[x];
+                cel4.innerHTML =list4[x];
+                cel5.innerHTML =list5[x];
+                cel6.innerHTML =list6[x];
+              n++;
+              x++;
+
+            }
+
+            
+
+        </script>
+    </body>
+</html>

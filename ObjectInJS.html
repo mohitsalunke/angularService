@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="id"></p>
+        <script>
+            var person={
+
+                firstname:"Mohit",
+                lastname:"salunke",
+                email:"mmsalunke@gamil.com"
+            };
+            document.getElementById("id").innerHTML=person.firstname+" "+person.lastname+ " "+person.email;
+
+            var person1=new Object();
+
+firstname:"Mohit";
+lastname:"salunke";
+email:"mmsalunke@gamil.com";
+
+document.getElementById("id").innerHTML=person.firstname+" "+person.lastname+ " "+person.email;
+
+        function person2(fname,lname)
+        {
+            fname=fname;
+            this.lname=lname;
+
+        }
+        var MyFather=new person2("mohit","Salunke");
+        console.log(MyFather);
+        </script>
+    </body>
+
+
+</html>

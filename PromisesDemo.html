@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            const myPromise = function(){
+                return new Promise(function(resolve,reject){
+                    //resolve("simple work done");
+                    reject('you lied to me')
+                })
+            }
+
+            // myPromise().then(function(msg){
+            //     console.log(msg);
+            // });
+            myPromise().catch(function(msg){
+                 console.log(msg);
+             });
+        </script>
+    </head>
+</html>
